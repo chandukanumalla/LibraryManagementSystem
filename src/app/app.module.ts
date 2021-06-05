@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { BooksdashboardComponent } from './compnents/booksdashboard/booksdashboard.component';
+import { BooksdashboardComponent } from './components/booksdashboard/booksdashboard.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -17,9 +18,13 @@ import { BooksdashboardComponent } from './compnents/booksdashboard/booksdashboa
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+function appRoutes(appRoutes: any): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
+  throw new Error('Function not implemented.');
+}
+
